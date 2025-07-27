@@ -2,12 +2,12 @@
 
 @media screen and (max-width: 600px) {
     section details summary {
-        font-size: 1.1rem; /* aumenta o tamanho do título */
+        font-size: 1.1rem; 
         padding: 3%;
     }
 
     section details .content {
-        font-size: 1rem; /* aumenta o texto do conteúdo */
+        font-size: 1rem; 
         padding: 3%;
     }
 
@@ -22,7 +22,6 @@ section details {
     margin: 0 auto;
 }
 
-/* Título (resumo) vermelho */
 section details summary {
     background-color: #990000;
     padding: 2%;
@@ -32,20 +31,17 @@ section details summary {
     cursor: pointer;
 }
 
-/* Conteúdo abaixo do summary */
 section details .content {
     background-color: #000;
     color: #fff;
     padding: 1.5%;
 }
 
-/* Texto dentro do conteúdo */
 section details .content p {
     margin-bottom: 10px;
     padding-left: 2%;
 }
 
-/* Lista dentro do conteúdo */
 section details .content ul {
     padding-left: 20px;
     margin-bottom: 10px;
