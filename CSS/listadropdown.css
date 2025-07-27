@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 600px) {
+    section details summary {
+        font-size: 1.1rem; /* aumenta o tamanho do título */
+        padding: 3%;
+    }
+
+    section details .content {
+        font-size: 1rem; /* aumenta o texto do conteúdo */
+        padding: 3%;
+    }
+
+    section details .content ul {
+        padding-left: 25px;
+    }
+}
+
+section details {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Título (resumo) vermelho */
+section details summary {
+    background-color: #990000;
+    padding: 2%;
+    margin-top: 1.5%;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* Conteúdo abaixo do summary */
+section details .content {
+    background-color: #000;
+    color: #fff;
+    padding: 1.5%;
+}
+
+/* Texto dentro do conteúdo */
+section details .content p {
+    margin-bottom: 10px;
+    padding-left: 2%;
+}
+
+/* Lista dentro do conteúdo */
+section details .content ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+section details .content ul li {
+    margin-bottom: 6px;
+    margin-left: 3%;
+    font-style: italic;
+}
