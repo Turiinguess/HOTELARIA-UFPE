@@ -7,6 +7,7 @@
         <meta name="description" content="Descubra como é o curso de Hotelaria na prática! Feito por alunos, pra alunos: relatos de alunos, viagens de campo, conteúdos históricos e muito mais.">
         <meta name="keywords" content="Hotelaria,">
         <link rel="stylesheet" href="./CSS/estiloglobal.css">
+        <link rel="stylesheet" href="./CSS/exalunos.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <link rel="icon" href="./icones/Icone.png" type="image/png">
     </head>
@@ -112,19 +113,91 @@
             </section>
         </header>
         <main>
-            <h1 class="tituloancora">TITULO</h1>
-                <section class="conteudo">
-                    <article>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias ipsam non praesentium id magni molestiae, quisquam dignissimos porro perferendis doloremque beatae sed, fugit fugiat eum minus quo est laborum. Ipsum?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta velit dolorem voluptas corrupti doloremque. Neque fuga ratione odit iure sint provident dicta veniam voluptatibus, repellat odio, earum optio officiis iusto. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda optio fugiat blanditiis nisi omnis tenetur sapiente? Omnis non distinctio facere tenetur dicta necessitatibus culpa, optio ab illum fuga vero sed. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem sed similique facilis id soluta harum, commodi itaque voluptatibus. Quis ut tempora suscipit enim. Beatae iusto dolore facere, obcaecati cupiditate rerum.</p>
-                    </article>
-                </section>
+            <section class="botoes-exalunos">
+            <button data-aluno="isabele">Isabele</button>
+            <button data-aluno="simone">Simone</button>
+            <button data-aluno="aline">Aline</button>
+            <button data-aluno="mylenna">Mylenna</button>
+            <button data-aluno="belissa">Belissa</button>
+            <button data-aluno="fernanda">Fernanda</button>
+            </section>
+            <section class="conteudo-exalunos">
+            <article id="isabele" class="oculto">
+                <h3>Isabele Oliveira de Almeida</h3>
+                <div class="exaluno-conteudo">
+                    <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/K2rrluxAdzs"
+                            title="Vídeo da Isabele"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="texto-container">
+                    <p>Conteúdo sobre Isabele aqui.</p>
+                    </div>
+                </div>
+                </article>
+
+                <article id="simone" class="oculto">
+                <h3>Simone de Lira Almeida</h3>
+                <div class="exaluno-conteudo">
+                    <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/Fw_zfH9MnHQ"
+                            title="Vídeo da Fernanda"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="texto-container">
+                    <p>Conteúdo sobre Simone aqui.</p>
+                    </div>
+                </div>
+                </article>
+
+            <article id="aline" class="oculto">
+                <h3>Aline Reynaux de Farias</h3>
+                <p>Conteúdo sobre Aline aqui.</p>
+            </article>
+
+            <article id="mylenna" class="oculto">
+                <h3>Mylenna Luz</h3>
+                <p>Conteúdo sobre Mylenna aqui.</p>
+            </article>
+
+            <article id="belissa" class="oculto">
+                <h3>Belissa Vitória</h3>
+                <p>Conteúdo sobre Belissa aqui.</p>
+            </article>
+
+            <article id="fernanda" class="oculto">
+                <h3>Fernanda Cadena</h3>
+                <p>Conteúdo sobre Fernanda aqui.</p>
+            </article>
+            </section>
         </main>
+
+        <script>
+            const botoes = document.querySelectorAll('.botoes-exalunos button');
+            const artigos = document.querySelectorAll('.conteudo-exalunos article');
+
+            botoes.forEach(botao => {
+            botao.addEventListener('click', () => {
+                const id = botao.getAttribute('data-aluno');
+
+                artigos.forEach(artigo => {
+                artigo.classList.add('oculto');
+                });
+
+                document.getElementById(id).classList.remove('oculto');
+            });
+            });
+        </script>
         <footer>
             <div class="container">
                 <div class="contentfooter">
                     <h3>CONTANTE O DHT</h3>
-                    <p>Email: xxxxx</p>
-                    <p>Telefone: xxxxx</p>
+                    <p>Email: <a href="mailto:hotelaria.dht@ufpe.br">hotelaria.dht@ufpe.br</a></p>
+                    <p>Telefone: <a href="tel:+558121268758">(81) 2126-8758</a></p>
                     <p>Endereço: <a href="https://maps.app.goo.gl/NPKHWxhDrTBDeJ6UA" target="_blank">Av. dos Economistas, sn - Cidade Universitária, Recife📌</a></p>
                 </div>
 

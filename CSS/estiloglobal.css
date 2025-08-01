@@ -298,10 +298,6 @@ header h1 {
   line-height: 1.6;
 }
 
-.conteudo p {
-    text-indent: 2rem;
-}
-
 .botaotuor button {
     display: block;
     margin: 20px auto 0 auto;
@@ -329,6 +325,12 @@ header h1 {
 
 .conteudo p {
     text-align: justify;
+}
+
+.conteudo p {
+  text-indent: 2em; /* ou 1.5em, 3em… depende do quanto você quer recuar */
+  margin-bottom: 1rem; /* continua com espaçamento entre parágrafos */
+  line-height: 1.6; /* para melhor leitura */
 }
 
 /*Aqui é ÁREA DE FOOTER*/

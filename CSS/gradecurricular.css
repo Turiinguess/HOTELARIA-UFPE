@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+.menu-disciplinas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+
+.botao-dropdown {
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+  transition: filter 0.3s;
+  font-size: 1rem;
+}
+
+.botao-dropdown:hover {
+  filter: brightness(0.9);
+}
+
+
+.gestao {
+  background: linear-gradient(45deg, #833AB4, #FD241F, #FCB045);
+}
+
+.hotelaria {
+  background: linear-gradient(45deg, #5a0000, #990000, #cc3333);
+}
+
+.ab {
+  background: linear-gradient(45deg, #cc6600, #ff9900, #ffb84d);
+}
+
+.exatas {
+  background: linear-gradient(45deg, #003366, #0066cc, #3399ff);
+}
+
+.eventos {
+  background: linear-gradient(45deg, #d4af00, #ffe100, #fff799);
+}
+
+.eletiva {
+  background: linear-gradient(45deg, #4b2e2e, #8b5e3c, #b58863);
+}
+
+
+.dropdown-content {
+  display: none;
+  background-color: #000;
+  color: white;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.menu-item.open .dropdown-content {
+  display: block;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.dropdown-content a:hover {
+  color: #ffbd59;
+}
+
+.botao-voltar {
+  padding: 2rem 0 1rem 0;
+  width: 90%;
+  max-width: 1160px;
+  margin: 10px auto 0 auto;
+}
+
+.btn-voltar {
+  background-color: #990000;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 4px 4px 0px #000;
+  transition: transform 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.btn-voltar:hover {
+  transform: scale(1.05);
+}
+
+.dropdown-content p {
+  text-indent: 0;
+  margin: 0;
+  line-height: normal;
+  text-align: left;
+}

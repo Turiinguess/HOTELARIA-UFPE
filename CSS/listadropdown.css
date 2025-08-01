@@ -52,3 +52,13 @@ section details .content ul li {
     margin-left: 3%;
     font-style: italic;
 }
+
+.sem-bolinha {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+section details .sem-bolinha ul li {
+    font-style: normal;
+}

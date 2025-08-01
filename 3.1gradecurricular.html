@@ -7,6 +7,7 @@
         <meta name="description" content="Descubra como é o curso de Hotelaria na prática! Feito por alunos, pra alunos: relatos de alunos, viagens de campo, conteúdos históricos e muito mais.">
         <meta name="keywords" content="Hotelaria,">
         <link rel="stylesheet" href="./CSS/estiloglobal.css">
+        <link rel="stylesheet" href="./CSS/gradecurricular.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <link rel="icon" href="./icones/Icone.png" type="image/png">
     </head>
@@ -114,17 +115,107 @@
         <main>
             <h1 class="tituloancora">GRADE CURRICULAR</h1>
                 <section class="conteudo">
-                    <article>
-                        <p>Hotelaria</p>
+                    <article class="menu-disciplinas">
+                    <div class="menu-item">
+                        <button class="botao-dropdown gestao" onclick="toggleDropdown(this)">GESTÃO</button>
+                        <div class="dropdown-content">
+                        <p><a href="./disciplinas/3.1.1administração.html">▶ INTRODUCAO A ADMINISTRACAO</a></p>
+                        <p><a href="#">▶ METODOLOGIA DO TRABALHO CIENTÍFICO</a></p>
+                        <p><a href="#">▶ COMPORTAMENTO ORGANIZACIONAL</a></p>
+                        <p><a href="#">▶ NOVOS NEGOCIOS</a></p>
+                        <p><a href="#">▶ GESTÃO DE PESSOAS NAS EMPRESAS TURÍSTICAS E HOTELEIRA</a></p>
+                        <p><a href="#">▶ GESTÃO DE CARREIRA</a></p>
+                        <p><a href="#">▶ LOGÍSTICA EMPRESARIAL</a></p>
+                        <p><a href="#">▶ VENDAS E NEGOCIAÇÃO</a></p>
+                        <p><a href="#">▶ ADMINISTRAÇÃO ESTRATÉGICA</a></p>
+                        <p><a href="#">▶ ADMINISTRAÇÃO FINANCEIRA APLICADA ÀS EMPRESAS DE HOSPITALIDADE</a></p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <button class="botao-dropdown hotelaria" onclick="toggleDropdown(this)">HOTELARIA</button>
+                        <div class="dropdown-content">
+                        <p><a href="#">▶ Fundamentos do Turismo e da Hotelaria</a></p>
+                        <p><a href="#">▶ INGLÊS INSTRUMENTAL APLICADO AO TURISMO E À HOTELARIA</a></p>
+                        <p><a href="#">▶ SOCIOLOGIA DO TURISMO </a></p>
+                        <p><a href="#">▶ LEGISLAÇÃO APLICADA AO TURISMO E À HOTELARIA</a></p>
+                        <p><a href="#">▶ MARKETING DE SERVIÇOS DE HOSPITALIDADE</a></p>
+                        <p><a href="#">▶ GESTÃO DOS SERVIÇOS DE HOSPEDAGEM</a></p>
+                        <p><a href="#">▶ HOTELARIA HOSPITALAR</a></p>
+                        <p><a href="#">▶ PESQUISA DE MERCADO APLICADA AO TURISMO E À HOTELARIA</a></p>
+                        <p><a href="#">▶ GOVERNANÇA E RSAE</a></p>
+                        <p><a href="#">▶ SISTEMAS DE INFORMAÇÃO APLICADOS AO TURISMO E À HOTELARIA</a></p>
+                        <p><a href="#">▶ ESTUDO DE VIABILIDADE DE EMPRESAS HOTELEIRAS</a></p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <button class="botao-dropdown ab" onclick="toggleDropdown(this)">A&B</button>
+                        <div class="dropdown-content">
+                        <p><a href="#">▶ Noções de Quim. dos Alimentos e Bebidas</a></p>
+                        <p><a href="#">▶ Gastronomia</a></p>
+                        <p><a href="#">▶ Gestão de Empreendimentos Gastronômicos</a></p>
+                        <p><a href="#">▶ Estudo das Bebidas</a></p>
+                        <p><a href="#">▶ Vigilância Sanitária de Alimentos</a></p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <button class="botao-dropdown exatas" onclick="toggleDropdown(this)">EXATAS</button>
+                        <div class="dropdown-content">
+                        <p><a href="#">▶ Estatística Aplicada ao Turismo e Hotelaria</a></p>
+                        <p><a href="#">▶ Economia Turismo</a></p>
+                        <p><a href="#">▶ Matemática Financeira</a></p>
+                        <p><a href="#">▶ Contabilidade Aplicada às Empresas Turísticas e Hoteleiras</a></p>
+                        <p><a href="#">▶ Contabilidade Gerencial em Empresas Hoteleiras</a></p> 
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <button class="botao-dropdown eventos" onclick="toggleDropdown(this)">EVENTOS</button>
+                        <div class="dropdown-content">
+                        <p><a href="#">▶ GESTÃO DO LAZER E DA RECREAÇÃO EM EMPRESAS DE HOSPITALIDADE</a></p>
+                        <p><a href="#">▶ PROJETO INTEGRADOR I</a></p>
+                        <p><a href="#">▶ INOVAÇÃO E CRIATIVIDADE</a></p>
+                        <p><a href="#">▶ PLANEJAMENTO E ORGANIZAÇÃO DE EVENTOS EM EMPRESAS DE HOSPITALIDADE</a></p>
+                        <p><a href="#">▶ PROJETO INTEGRADOR II</a></p>
+                        </div>
+                    </div>
+
+                    <div class="menu-item">
+                        <button class="botao-dropdown eletiva" onclick="toggleDropdown(this)">ELETIVA</button>
+                        <div class="dropdown-content">
+                        <p><a href="#">▶ Cerimonial e Protocolo</a></p>
+                        <p><a href="#">▶ Enologia</a></p>
+                        <p><a href="#">▶ Fundamentos de Antropologia</a></p>
+                        <p><a href="#">▶ Gastronomia e Turismo</a></p>
+                        <p><a href="#">▶ Gestão Ambiental e Turismo</a></p>
+                        <p><a href="#">▶ História e Cultura de Pernambuco</a></p>
+                        <p><a href="#">▶ Introdução a Libras</a></p>
+                        <p><a href="#">▶ Relações Raciais</a></p>
+                        <p><a href="#">▶ Seminário Internacional</a></p>
+                        <p><a href="#">▶ Técnica de Comunicação Publicitária</a></p>
+                        <p><a href="#">▶ Técnica de Recreação</a></p>
+                        <p><a href="#">▶ Teoria Geral do Turismo 2</a></p>
+                        <p><a href="#">▶ Tópicas Especiais em Hospitalidade e Tecnologia</a></p>
+                        </div>
+                    </div>
                     </article>
+
+                    <script>
+                    function toggleDropdown(button) {
+                    const parent = button.parentElement;
+                    parent.classList.toggle("open");
+                    }
+                    </script>
                 </section>
         </main>
         <footer>
             <div class="container">
                 <div class="contentfooter">
                     <h3>CONTANTE O DHT</h3>
-                    <p>Email: xxxxx</p>
-                    <p>Telefone: xxxxx</p>
+                    <p>Email: <a href="mailto:hotelaria.dht@ufpe.br">hotelaria.dht@ufpe.br</a></p>
+                    <p>Telefone: <a href="tel:+558121268758">(81) 2126-8758</a></p>
                     <p>Endereço: <a href="https://maps.app.goo.gl/NPKHWxhDrTBDeJ6UA" target="_blank">Av. dos Economistas, sn - Cidade Universitária, Recife📌</a></p>
                 </div>
 
